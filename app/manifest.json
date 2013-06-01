@@ -1,0 +1,34 @@
+{
+    "name":"Vocabulous",
+    "version":"0.0.1",
+    "manifest_version":2,
+    "description":"Vocabulary expander",
+    "icons":{
+        "16":"img/icon-16.png",
+        "128":"img/icon-128.png"
+    },
+    "default_locale":"en",
+    "background":{
+        "scripts":[
+            "scripts/jquery.js",
+            "scripts/service.js",
+            "scripts/background.js"
+        ]
+    },
+    "browser_action":{
+        "default_icon":{
+            "19":"img/icon-19.png",
+            "38":"img/icon-38.png"
+        },
+        "default_title":"vocabulous",
+        "default_popup":"popup.html"
+    },
+    "options_page":"options.html",
+    "omnibox":{
+        "keyword":"no"
+    },
+    "permissions":[
+        "cookies",
+        "contextMenus"
+    ]
+}
