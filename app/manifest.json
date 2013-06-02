@@ -29,6 +29,8 @@
     },
     "permissions":[
         "cookies",
-        "contextMenus"
+        "contextMenus",
+        "http://*/*",
+        "https://*/*"
     ]
 }
