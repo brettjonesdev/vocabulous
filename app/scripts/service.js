@@ -15,6 +15,15 @@ function getWords() {
     })
 }
 
-function register() {
-
+function register(req) {
+    $.post("http://localhost:3000/register",
+        req
+    ).done(function (res) {
+        console.log("Success", res);
+        $.ajaxSetup({
+            headers: {"Authorization": "Basic " + res.token}
+        });
+    }).fail(function (err) {
+        console.log("Error", err);
+    });
 }
