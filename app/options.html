@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="styles/main.css" rel="stylesheet">
-        <!-- build:js scripts/options.js -->
-        <script src="scripts/options.js"></script>
-        <script src="scripts/bootstrap.js"></script>
-        <script src="scripts/jquery.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!-- CHROME EXTENSION OPTION -->
-    </body>
+<head>
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- build:js scripts/popup.js -->
+    <script src="scripts/config.js"></script>
+    <script src="scripts/libs/require.js" data-main="scripts/options-main.js"></script>
+    <!-- endbuild -->
+
+</head>
+<body>
+<div id="content" class="container"></div>
+</body>
 </html>
